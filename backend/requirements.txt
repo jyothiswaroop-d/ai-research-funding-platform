@@ -7,10 +7,12 @@ pydantic-settings>=2.1.0
 pyjwt>=2.8.0
 passlib[bcrypt]>=1.7.4
 python-multipart>=0.0.6
-pandas>=2.2.0
-numpy>=1.26.3
-scikit-learn>=1.4.0
-sentence-transformers>=2.3.1
+
+# pandas>=2.2.0
+# numpy>=1.26.3
+# scikit-learn>=1.4.0
+# sentence-transformers>=2.3.1
+
 reportlab>=4.1.0
 openpyxl>=3.1.2
 python-dotenv>=1.0.1
