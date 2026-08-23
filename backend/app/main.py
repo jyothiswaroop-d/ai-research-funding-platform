@@ -22,12 +22,15 @@ from app.api.auth import router as auth_router
 from app.api.users import router as users_router
 from app.api.profile import router as profile_router
 from app.api.research import router as research_router
-from app.api.funding import router as funding_router
+
 from app.api.patents import router as patents_router
-from app.api.technology import router as technology_router
-from app.api.innovation import router as innovation_router
-from app.api.commercialization import router as commercialization_router
-from app.api.assistant import router as assistant_router
+
+# from app.api.funding import router as funding_router
+# from app.api.technology import router as technology_router
+# from app.api.innovation import router as innovation_router
+# from app.api.commercialization import router as commercialization_router
+# from app.api.assistant import router as assistant_router
+
 from app.api.notifications import router as notifications_router
 from app.api.reports import router as reports_router
 
@@ -56,12 +59,15 @@ app.include_router(auth_router, prefix=settings.API_V1_STR)
 app.include_router(users_router, prefix=settings.API_V1_STR)
 app.include_router(profile_router, prefix=settings.API_V1_STR)
 app.include_router(research_router, prefix=settings.API_V1_STR)
-app.include_router(funding_router, prefix=settings.API_V1_STR)
+
 app.include_router(patents_router, prefix=settings.API_V1_STR)
-app.include_router(technology_router, prefix=settings.API_V1_STR)
-app.include_router(innovation_router, prefix=settings.API_V1_STR)
-app.include_router(commercialization_router, prefix=settings.API_V1_STR)
-app.include_router(assistant_router, prefix=settings.API_V1_STR)
+
+# app.include_router(funding_router, prefix=settings.API_V1_STR)
+# app.include_router(technology_router, prefix=settings.API_V1_STR)
+# app.include_router(innovation_router, prefix=settings.API_V1_STR)
+# app.include_router(commercialization_router, prefix=settings.API_V1_STR)
+# app.include_router(assistant_router, prefix=settings.API_V1_STR)
+
 app.include_router(notifications_router, prefix=settings.API_V1_STR)
 app.include_router(reports_router, prefix=settings.API_V1_STR)
 
