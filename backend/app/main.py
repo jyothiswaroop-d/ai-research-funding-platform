@@ -32,7 +32,7 @@ from app.api.research import router as research_router
 # from app.api.assistant import router as assistant_router
 
 from app.api.notifications import router as notifications_router
-from app.api.reports import router as reports_router
+# from app.api.reports import router as reports_router
 
 # Auto create database tables on startup
 Base.metadata.create_all(bind=engine)
@@ -61,7 +61,6 @@ app.include_router(profile_router, prefix=settings.API_V1_STR)
 app.include_router(research_router, prefix=settings.API_V1_STR)
 
 # app.include_router(patents_router, prefix=settings.API_V1_STR)
-
 # app.include_router(funding_router, prefix=settings.API_V1_STR)
 # app.include_router(technology_router, prefix=settings.API_V1_STR)
 # app.include_router(innovation_router, prefix=settings.API_V1_STR)
@@ -69,7 +68,7 @@ app.include_router(research_router, prefix=settings.API_V1_STR)
 # app.include_router(assistant_router, prefix=settings.API_V1_STR)
 
 app.include_router(notifications_router, prefix=settings.API_V1_STR)
-app.include_router(reports_router, prefix=settings.API_V1_STR)
+# app.include_router(reports_router, prefix=settings.API_V1_STR)
 
 @app.get("/")
 def root():
