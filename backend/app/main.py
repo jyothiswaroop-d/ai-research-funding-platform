@@ -23,7 +23,7 @@ from app.api.users import router as users_router
 from app.api.profile import router as profile_router
 from app.api.research import router as research_router
 
-from app.api.patents import router as patents_router
+# from app.api.patents import router as patents_router
 
 # from app.api.funding import router as funding_router
 # from app.api.technology import router as technology_router
@@ -60,7 +60,7 @@ app.include_router(users_router, prefix=settings.API_V1_STR)
 app.include_router(profile_router, prefix=settings.API_V1_STR)
 app.include_router(research_router, prefix=settings.API_V1_STR)
 
-app.include_router(patents_router, prefix=settings.API_V1_STR)
+# app.include_router(patents_router, prefix=settings.API_V1_STR)
 
 # app.include_router(funding_router, prefix=settings.API_V1_STR)
 # app.include_router(technology_router, prefix=settings.API_V1_STR)
